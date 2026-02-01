@@ -10,7 +10,11 @@ Provide accurate and real-time attendance tracking.
 Enhance efficiency and productivity in attendance management.
 
 ## How It Gonna Work
-flowchart.jpg
+## System Flowchart
+<p align="center">
+  <img src="images/flowchart.png" width="700">
+</p>
+
 
 ## Algorithm
 01. Initialize video capture from the webcam.
