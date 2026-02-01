@@ -12,7 +12,7 @@ Enhance efficiency and productivity in attendance management.
 ## How It Gonna Work
 ## System Flowchart
 <p align="center">
-  <img src="images/flowchart.png" width="700">
+  <img src="images/flowchart.jpg" width="700">
 </p>
 
 
