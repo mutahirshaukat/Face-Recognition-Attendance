@@ -10,9 +10,8 @@ Provide accurate and real-time attendance tracking.
 Enhance efficiency and productivity in attendance management.
 
 ## How It Gonna Work
-## System Flowchart
 <p align="center">
-  <img src="images/flowchart.jpg" width="600">
+  <img src="flowchart.jpg" width="600">
 </p>
 
 
@@ -46,3 +45,12 @@ Enhance efficiency and productivity in attendance management.
 06. os:
       Purpose: Interacts with the operating system.
       Functionality: Handles directory and file operations, such as listing image files in a directory and joining file paths.
+
+## Results
+<p align="center">
+  <img src="image.png" width="600">
+</p>
+
+<p align="center">
+  <img src="image1.png" width="600">
+</p>
