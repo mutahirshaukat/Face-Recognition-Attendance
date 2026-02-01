@@ -7,31 +7,66 @@ from datetime import datetime
 
 video_capture = cv2.VideoCapture(0)
 
-Alex_image = face_recognition.load_image_file("PROJECTS/photos/Alex.jpg")
-Alex_encoding = face_recognition.face_encodings(Alex_image)[0]
+Mutahir_image = face_recognition.load_image_file("PROJECTS/photos/Mutahir.jpg")
+Mutahir_encoding = face_recognition.face_encodings(Mutahir_image)[0]
 
-John_image = face_recognition.load_image_file("PROJECTS/photos/John.jpg")
-John_encoding = face_recognition.face_encodings(John_image)[0]
+Ali_image = face_recognition.load_image_file("PROJECTS/photos/Ali.jpg")
+Ali_encoding = face_recognition.face_encodings(Ali_image)[0]
 
-chota_shah_image = face_recognition.load_image_file("PROJECTS/photos/Kitty.jpg")
-chota_shah_encoding = face_recognition.face_encodings(chota_shah_image)[0]
+Christian_image = face_recognition.load_image_file("PROJECTS/photos/Christian.jpg")
+Christian_encoding = face_recognition.face_encodings(Christian_image)[0]
 
-spiderman_image = face_recognition.load_image_file("PROJECTS/photos/spiderman.jpg")
-spiderman_encoding = face_recognition.face_encodings(spiderman_image)[0]
+Darshan_image = face_recognition.load_image_file("PROJECTS/photos/Darshan.jpg")
+Darshan_encoding = face_recognition.face_encodings(Darshan_image)[0]
 
-student_image = face_recognition.load_image_file("PROJECTS/photos/student.jpg")
-student_encoding = face_recognition.face_encodings(student_image)[0]
+Jhon_image = face_recognition.load_image_file("PROJECTS/photos/Jhon.jpg")
+Jhon_encoding = face_recognition.face_encodings(Jhon_image)[0]
+
+Jurica_image = face_recognition.load_image_file("PROJECTS/photos/Jurica.jpg")
+Jurica_encoding = face_recognition.face_encodings(Jurica_image)[0]
+
+Kevin_image = face_recognition.load_image_file("PROJECTS/photos/Kevin.jpg")
+Kevin_encoding = face_recognition.face_encodings(Kevin_image)[0]
+
+Roman_image = face_recognition.load_image_file("PROJECTS/photos/Roman.jpg")
+Roman_encoding = face_recognition.face_encodings(Roman_image)[0]
+
+Sibtain_image = face_recognition.load_image_file("PROJECTS/photos/Sibtain.jpg")
+Sibtain_encoding = face_recognition.face_encodings(Sibtain_image)[0]
+
+Timothy_image = face_recognition.load_image_file("PROJECTS/photos/Timothy.jpg")
+Timothy_encoding = face_recognition.face_encodings(Timothy_image)[0]
+
+Zee_image = face_recognition.load_image_file("PROJECTS/photos/Zee.jpg")
+Zee_encoding = face_recognition.face_encodings(Zee_image)[0]
 
 known_face_encodings = [
-    Alex_encoding,
-    John_encoding,
-    Alex_encoding,
-    spiderman_encoding,
-    student_encoding]
+    Mutahir_encoding,
+    Ali_encoding,
+    Christian_encoding,
+    Darshan_encoding,
+    Jhon_encoding,
+    Jurica_encoding,
+    Kevin_encoding,
+    Roman_encoding,
+    Sibtain_encoding,
+    Timothy_encoding,
+    Zee_encoding]
 
-known_face_names = ["Alex", "John", "Kitty", "spiderman","student"]
+known_face_names = [
+    "Mutahir",
+    "Ali",
+    "Christian",
+    "Darshan",
+    "Jhon",
+    "Jurica",
+    "Kevin",
+    "Roman",
+    "Sibtain",
+    "Timothy",
+    "Zee"]
 
-students = known_face_names.copy()
+Mutahirs = known_face_names.copy()
 
 face_locations = []
 face_encodings = []
@@ -61,9 +96,9 @@ while True:
                 name = known_face_names[best_match_index]
 
             face_names.append(name)
-            if name in students:
-                students.remove(name)
-                print(students)
+            if name in Mutahirs:
+                Mutahirs.remove(name)
+                print(Mutahirs)
                 current_time = now.strftime("%H-%M-%S")
                 lnwrite.writerow([name, current_time])
 
